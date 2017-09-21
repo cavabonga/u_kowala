@@ -1,0 +1,44 @@
+section.navbar
+  .navbar-wrapper
+    .container-fluid
+      nav.navbar.navbar-default.navbar-fixed-top.topnav
+        .container-fluid 
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#' id="logo") 
+              img(src="/assets/img/logo_sm.png" class="logo_sm")
+            a.navbar-brand(href="#" id="kowala") Kowala
+          #navbar.navbar-collapse.collapse 
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='#home') 
+                  | Strona Główna 
+                  i.fa.fa-home
+              li.dropdown
+                a(href='#' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="uro") 
+                  | Uroczystości 
+                  i.fa.fa-arrow-circle-o-down
+                ul.dropdown-menu
+                  li
+                    a(href="#wesela") Wesela
+                    a(href="#komunie") Chrzciny & Komunie
+                    a(href="#firmowe") Imprezy firmowe
+                    a(href="#sylwester") Sylwester                
+              li
+                a(href='#' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="gal") 
+                  | Galeria 
+                  i.fa.fa-arrow-circle-o-down
+                ul.dropdown-menu
+                  li
+                    a(href="#dom") Dom Weselny
+                  li
+                    a(href="#wokol") Wokół domu
+                    a(href="#slub") Ślub w plenerze               
+              li
+                a(href='#kontakt') 
+                  | Kontakt 
+                  i.fa.fa-envelope

@@ -1,0 +1,72 @@
+section.navbar
+  #logo
+    padding-left: 10px
+    padding-top: 13px
+    padding-bottom: 10px
+    @media (max-width: 767px)
+      padding-right: 0px
+
+  .logo_sm
+    width: 25px
+
+  #kowala
+    font-size: 22px
+    padding-left: 5px
+    color: white
+
+  .navbar-default
+     background: crimson
+     border-bottom: 3px solid crimson
+     @media (max-width: 768px)
+       border-bottom: 0
+
+  .navbar-default .navbar-nav>li>a
+    color: white
+    padding-left: 25px
+    padding-right: 25px
+
+    &:hover,
+    &:focus,
+    &:active
+      background: white
+      color: crimson
+      font-weight: 600
+
+    @media (max-width: 768px)
+      padding-top: 20px
+      padding-bottom: 20px
+
+  .navbar-nav>li>.dropdown-menu
+    margin-top: 2px
+    padding: 0
+    border-color: crimson
+
+  .dropdown-menu>li>a
+    padding-top: 10px
+    padding-bottom: 10px
+    &:hover
+      background: crimson
+      color: white
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a
+    padding-left: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+    @media (max-width: 768px)
+      color: white
+      padding-left: 40px
+
+
+  .navbar-default .navbar-toggle
+    background: white
+    border-color: crimson
+    .icon-bar
+      background: crimson
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form
+    border: 0
+
+  .navbar-nav
+    @media (max-width: 768px)
+      margin-top: 0px
+      margin-bottom: 0px
